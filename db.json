@@ -1,0 +1,327 @@
+{
+  "rooms": [
+    {
+      "id": "1",
+      "roomNumber": "101",
+      "floor": 1,
+      "area": 25,
+      "price": 2500000,
+      "status": "occupied",
+      "type": "single",
+      "description": "Phòng đơn tầng 1, có máy lạnh",
+      "amenities": [
+        "Máy lạnh",
+        "Nóng lạnh",
+        "Tủ lạnh"
+      ]
+    },
+    {
+      "id": "2",
+      "roomNumber": "102",
+      "floor": 1,
+      "area": 30,
+      "price": 3000000,
+      "status": "available",
+      "type": "double",
+      "description": "Phòng đôi tầng 1, view đẹp",
+      "amenities": [
+        "Máy lạnh",
+        "Nóng lạnh",
+        "Tủ lạnh",
+        "Máy giặt"
+      ]
+    },
+    {
+      "id": "3",
+      "roomNumber": "201",
+      "floor": 2,
+      "area": 25,
+      "price": 2800000,
+      "status": "occupied",
+      "type": "single",
+      "description": "Phòng đơn tầng 2",
+      "amenities": [
+        "Máy lạnh",
+        "Nóng lạnh"
+      ]
+    },
+    {
+      "id": "4",
+      "roomNumber": "202",
+      "floor": 2,
+      "area": 35,
+      "price": 3500000,
+      "status": "maintenance",
+      "type": "studio",
+      "description": "Studio tầng 2, đang sửa chữa",
+      "amenities": [
+        "Máy lạnh",
+        "Nóng lạnh",
+        "Tủ lạnh",
+        "Máy giặt",
+        "Bếp"
+      ]
+    },
+    {
+      "id": "5",
+      "roomNumber": "301",
+      "floor": 3,
+      "area": 28,
+      "price": 3200000,
+      "status": "available",
+      "type": "single",
+      "description": "Phòng đơn tầng 3",
+      "amenities": [
+        "Máy lạnh",
+        "Nóng lạnh"
+      ]
+    },
+    {
+      "id": "6",
+      "roomNumber": "302",
+      "floor": 3,
+      "area": 40,
+      "price": 4000000,
+      "status": "occupied",
+      "type": "studio",
+      "description": "Studio cao cấp tầng 3",
+      "amenities": [
+        "Máy lạnh",
+        "Nóng lạnh",
+        "Tủ lạnh",
+        "Máy giặt",
+        "Bếp",
+        "Sofa"
+      ]
+    }
+  ],
+  "tenants": [
+    {
+      "id": "1",
+      "fullName": "Nguyễn Văn An",
+      "phone": "0901234567",
+      "email": "nguyenvanan@gmail.com",
+      "idCard": "079201012345",
+      "dob": "1995-03-15",
+      "address": "123 Lê Lợi, Q1, TP.HCM",
+      "occupation": "Nhân viên văn phòng",
+      "roomId": 1,
+      "checkInDate": "2024-01-01",
+      "emergencyContact": "Nguyễn Văn Bình - 0901234568"
+    },
+    {
+      "id": "2",
+      "fullName": "Trần Thị Bích",
+      "phone": "0912345678",
+      "email": "tranthib@gmail.com",
+      "idCard": "079201023456",
+      "dob": "1998-07-20",
+      "address": "456 Nguyễn Huệ, Q1, TP.HCM",
+      "occupation": "Sinh viên",
+      "roomId": 3,
+      "checkInDate": "2024-02-15",
+      "emergencyContact": "Trần Văn Cường - 0912345679"
+    },
+    {
+      "id": "3",
+      "fullName": "Lê Minh Khoa",
+      "phone": "0923456789",
+      "email": "leminhkhoa@gmail.com",
+      "idCard": "079201034567",
+      "dob": "1993-11-08",
+      "address": "789 Trần Hưng Đạo, Q5, TP.HCM",
+      "occupation": "Kỹ sư",
+      "roomId": 6,
+      "checkInDate": "2024-03-01",
+      "emergencyContact": "Lê Thị Mai - 0923456780"
+    },
+    {
+      "id": "4",
+      "fullName": "Phạm Thị Lan",
+      "phone": "0934567890",
+      "email": "phamthilan@gmail.com",
+      "idCard": "079201045678",
+      "dob": "2000-05-12",
+      "address": "321 Đinh Tiên Hoàng, Bình Thạnh, TP.HCM",
+      "occupation": "Sinh viên",
+      "roomId": null,
+      "checkInDate": null,
+      "emergencyContact": "Phạm Văn Nam - 0934567891"
+    }
+  ],
+  "contracts": [
+    {
+      "id": "1",
+      "roomId": 1,
+      "tenantId": 1,
+      "startDate": "2024-01-01",
+      "endDate": "2024-12-31",
+      "monthlyRent": 2500000,
+      "deposit": 5000000,
+      "status": "active",
+      "terms": "Thanh toán trước ngày 5 hàng tháng. Không nuôi thú cưng."
+    },
+    {
+      "id": "2",
+      "roomId": 3,
+      "tenantId": 2,
+      "startDate": "2024-02-15",
+      "endDate": "2025-02-14",
+      "monthlyRent": 2800000,
+      "deposit": 5600000,
+      "status": "active",
+      "terms": "Thanh toán trước ngày 5 hàng tháng."
+    },
+    {
+      "id": "3",
+      "roomId": 6,
+      "tenantId": 3,
+      "startDate": "2024-03-01",
+      "endDate": "2025-02-28",
+      "monthlyRent": 4000000,
+      "deposit": 8000000,
+      "status": "active",
+      "terms": "Thanh toán trước ngày 10 hàng tháng. Không tổ chức tiệc tùng."
+    },
+    {
+      "id": "4",
+      "roomId": 2,
+      "tenantId": null,
+      "startDate": "2023-06-01",
+      "endDate": "2023-11-30",
+      "monthlyRent": 3000000,
+      "deposit": 6000000,
+      "status": "expired",
+      "terms": "Hợp đồng đã hết hạn."
+    }
+  ],
+  "invoices": [
+    {
+      "id": "1",
+      "roomId": 1,
+      "tenantId": 1,
+      "month": "2026-10",
+      "electricityUsage": 120,
+      "electricityPrice": 3500,
+      "waterUsage": 8,
+      "waterPrice": 15000,
+      "rent": 2500000,
+      "otherFees": 50000,
+      "totalAmount": 2970000,
+      "status": "paid",
+      "dueDate": "2026-11-05",
+      "paidDate": "2026-11-03"
+    },
+    {
+      "id": "2",
+      "roomId": 3,
+      "tenantId": 2,
+      "month": "2026-10",
+      "electricityUsage": 95,
+      "electricityPrice": 3500,
+      "waterUsage": 6,
+      "waterPrice": 15000,
+      "rent": 2800000,
+      "otherFees": 50000,
+      "totalAmount": 3272500,
+      "status": "paid",
+      "dueDate": "2026-11-05",
+      "paidDate": "2026-11-04"
+    },
+    {
+      "id": "3",
+      "roomId": 6,
+      "tenantId": 3,
+      "month": "2026-10",
+      "electricityUsage": 150,
+      "electricityPrice": 3500,
+      "waterUsage": 10,
+      "waterPrice": 15000,
+      "rent": 4000000,
+      "otherFees": 100000,
+      "totalAmount": 4775000,
+      "status": "paid",
+      "dueDate": "2026-11-10",
+      "paidDate": "2026-11-08"
+    },
+    {
+      "id": "4",
+      "roomId": 1,
+      "tenantId": 1,
+      "month": "2026-11",
+      "electricityUsage": 110,
+      "electricityPrice": 3500,
+      "waterUsage": 7,
+      "waterPrice": 15000,
+      "rent": 2500000,
+      "otherFees": 50000,
+      "totalAmount": 2940000,
+      "status": "unpaid",
+      "dueDate": "2026-12-05",
+      "paidDate": null
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "name": "Điện",
+      "unit": "kWh",
+      "price": 3210,
+      "description": "Giá điện theo quy định EVN"
+    },
+    {
+      "id": "2",
+      "name": "Nước",
+      "unit": "m³",
+      "price": 20000,
+      "description": "Giá nước sinh hoạt"
+    },
+    {
+      "id": "3",
+      "name": "Internet",
+      "unit": "tháng",
+      "price": 50000,
+      "description": "Internet cáp quang 100Mbps"
+    },
+    {
+      "id": "4",
+      "name": "Vệ sinh",
+      "unit": "tháng",
+      "price": 50000,
+      "description": "Phí vệ sinh chung cư"
+    },
+    {
+      "id": "5",
+      "name": "Trông xe",
+      "unit": "tháng",
+      "price": 50000,
+      "description": "Trông xe máy"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "fullName": "Nguyễn Quản Trị (Chủ trọ)",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "manager",
+      "password": "123",
+      "fullName": "Trần Thu Ngân (Quản lý)",
+      "role": "manager"
+    },
+    {
+      "id": "3",
+      "username": "tenant",
+      "password": "123",
+      "fullName": "Nguyễn Văn An (Khách thuê 101)",
+      "role": "tenant",
+      "tenantId": "1",
+      "roomId": "1"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
